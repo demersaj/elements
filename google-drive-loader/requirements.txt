@@ -1,0 +1,6 @@
+--extra-index-url https://gitlab.com/api/v4/projects/49121232/packages/pypi/simple
+webai_element_sdk==0.9.*
+google-api-python-client==2.108.*
+google-auth==2.25.*
+google-auth-oauthlib==1.2.*
+google-auth-httplib2==0.2.*

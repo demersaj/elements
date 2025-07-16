@@ -1,0 +1,50 @@
+{
+    "id": "d30339fa-ab45-432b-b9aa-a6f431728148",
+    "name": "garage_opener",
+    "displayName": "Garage Opener",
+    "version": "0.1.4",
+    "frameworkVersion": "0.9",
+    "inputs": [
+        {
+            "name": "input_1",
+            "contentType": "cv2-frame"
+        }
+    ],
+    "outputs": [],
+    "settings": [
+        {
+            "name": "api_token",
+            "displayName": "API Token",
+            "description": "",
+            "default": "",
+            "type": "str",
+            "hints": null,
+            "validValues": null,
+            "required": true,
+            "sensitive": false,
+            "refreshable": false,
+            "dependsOn": null,
+            "characterLimit": null
+        },
+        {
+            "name": "device_id",
+            "displayName": "Device ID",
+            "description": "ID of the device you want to control",
+            "default": "",
+            "type": "str",
+            "hints": null,
+            "validValues": null,
+            "required": true,
+            "sensitive": false,
+            "refreshable": false,
+            "dependsOn": null,
+            "characterLimit": null
+        }
+    ],
+    "packages": [],
+    "isTraining": false,
+    "isInference": true,
+    "subElements": [],
+    "parentElementId": "",
+    "description": "Open garage door based on frame input."
+}
