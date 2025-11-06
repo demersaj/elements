@@ -79,7 +79,7 @@ element = Element(
     id=UUID("2b8c3f7e-9d1a-4e6b-8c5d-1a2b3c4d5e6f"),
     name="s3_document_loader",
     display_name="S3 Document Loader",
-    version="0.2.2",
+    version="0.2.4",
     description="Imports documents from an S3 bucket so that AI models can process them",
     outputs=Outputs(),
     settings=Settings(),
@@ -97,6 +97,7 @@ def _get_s3_client(settings: Settings) -> boto3.client:
         })
     
     session = boto3.Session(**session_kwargs)
+    ctx.logger.log('s3', region_name=settings.aws_region.value)
     return session.client('s3', region_name=settings.aws_region.value)
 
 
